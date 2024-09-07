@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OkayThisIsCrazy's Website</title>
+    <style>
+        :root {
+            --background-dark: #181a1b;
+            --text-dark: #e8e6e3;
+            --primary-color: #3391ff;
+            --button-hover-gradient: linear-gradient(135deg, #ff416c, #ff4b2b);
+            --button-dark-bg: #000000;
+            --button-light-bg: #14134a;
+            --button-color: white;
+            --shadow: rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            max-width: 500px;
+            margin: 40px auto;
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--background-dark);
+            text-align: center;
+            line-height: 1.6;
+            background-image: url('https://external-preview.redd.it/r6g38aXSaQWtd1KxwJbQ-Fs5jtSVDxX3wtLHJEdqixw.jpg?width=1080&crop=smart&auto=webp&s=87a2c94cb3e1561e2b6abd467ea68d81b9901720');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            animation: fadeInBg 0.8s ease-in;
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .button {
+            padding: 15px;
+            border-radius: 50%;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: var(--button-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 1.4s ease-in-out;
+            background-color: var(--button-dark-bg);
+            width: 50px;
+            height: 50px;
+        }
+
+        .button:hover {
+            background: var(--button-hover-gradient);
+            transform: translateY(-3px);
+            filter: brightness(1.2);
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+
+        .button img {
+            width: 25px;
+            height: 25px;
+        }
+
+        footer {
+            font-size: 0.8em;
+            margin-top: 40px;
+            animation: fadeIn 1.6s ease-in-out;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .content-wrapper {
+            background-color: rgba(24, 26, 27, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 1.8s ease-in-out;
+        }
+
+        @keyframes fadeInBg {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .about-me {
+            text-align: left;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        .about-me h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .about-me p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div>
+            <a href="https://www.youtube.com/watch?v=Y9-MLgHxQGs">
+                <img src="https://yt3.ggpht.com/5AJycOA1RDZAFXu9lTP8FghD96XIR73JhHUhB_OHUSp2x0ieQ3hGngMFdKbrv_07J6ksFx0IPg=s600-c-k-c0x00ffffff-no-rj-rp-mo" width="150px" alt="YouTube Image" style="border-radius: 10px;">
+            </a>
+        </div>
+
+        <h1>Hello</h1>
+        <h2>I'm OkayThisIsCrazy (Crazy).</h2>
+        <p>Note that I have no other associated accounts than the ones listed here.</p>
+
+        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 40px;">
+            <a href="https://www.youtube.com/@OkayThisIsCrazy1" class="button" style="background-color: #ff0000;">
+                <!-- YouTube icon -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            </a>
+            <a href="https://x.com/thisiscrazyokay" class="button" style="background-color: #1da1f2;">
+                <!-- X (Twitter) icon -->
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.stickpng.com%2Fassets%2Fimages%2F580b57fcd9996e24bc43c53e.png&f=1&nofb=1&ipt=b9e826973bf2f75ba2d5f9268ec6833cf9fa4d188f12f68e3cfd85d66dd6b761&ipo=images" alt="Twitter">
+            </a>
+            <a href="https://github.com/JoeWI133" class="button" style="background-color: #333333;">
+                <!-- GitHub icon -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+            </a>
+            <a href="mailto:uff223@proton.me" class="button" style="background-color: #14134a;">
+                <!-- Email icon -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email"> 
+            </a>
+        </div>
+
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>I'm 15 years old and "specialize" in cybersecurity. I also play games chess, Clash Royale, Portal... I think that's it :P</p>
+        </div>
+
+        <footer>
+            <p>Copyright © 2024 OkayThisIsCrazy. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
